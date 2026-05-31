@@ -1,0 +1,27 @@
+{
+  "name": "texxasrulez/ai_roundcube_assistant",
+  "type": "roundcube-plugin",
+  "description": "AI-powered assistant plugin for Roundcube webmail.",
+    "homepage": "https://github.com/texxasrulez/ai_roundcube_assistant",
+	"support": {
+		"issues": "https://github.com/texxasrulez/ai_roundcube_assistant/issues",
+		"source": "https://github.com/texxasrulez/ai_roundcube_assistant"
+  },
+  "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Gene Hawkins",
+            "email": "texxasrulez@yahoo.com",
+            "role": "Lead"
+        }
+    ],
+  "require": {
+    "php": ">=7.4",
+    "roundcube/plugin-installer": ">=0.3.2"
+  },
+  "autoload": {
+    "classmap": [
+      "lib/"
+    ]
+  }
+}

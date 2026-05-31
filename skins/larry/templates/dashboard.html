@@ -1,0 +1,43 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<roundcube:include file="/includes/links.html" />
+</head>
+<body class="noscroll">
+
+<roundcube:include file="/includes/header.html" />
+
+<div id="mainscreen" class="offset">
+  <h1 class="voice"><roundcube:label name="ai_roundcube_assistant.aiassistant" /></h1>
+
+  <div id="ai-assistant-dashboard" class="uibox contentbox ai-assistant-dashboard" role="main">
+    <div class="boxtitle">AI Assistant</div>
+    <div class="scroller boxcontent">
+      <div class="ai-dashboard-grid">
+        <section class="ai-dashboard-card ai-dashboard-card-primary">
+          <h2>Inbox health</h2>
+          <p>Use message toolbar actions to build summaries, threat scans, actions, and priority insights.</p>
+          <div class="ai-dashboard-actions">
+            <button type="button" id="ai-assistant-load-followups" class="button mainaction">Load follow-ups</button>
+          </div>
+        </section>
+
+        <section class="ai-dashboard-card">
+          <h2>Follow-up candidates</h2>
+          <p>Messages that may need a reply or reminder will appear here when follow-up tracking has data.</p>
+          <div id="ai-assistant-followups" class="ai-dashboard-list"></div>
+        </section>
+
+        <section class="ai-dashboard-card ai-dashboard-card-muted">
+          <h2>Message tools</h2>
+          <p>Open a message and use Summarize, Threat scan, Actions, or Prioritize from the mail toolbar.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<roundcube:include file="/includes/footer.html" />
+
+</body>
+</html>

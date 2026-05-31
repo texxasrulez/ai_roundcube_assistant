@@ -1,0 +1,67 @@
+<?php
+
+$config['ai_assistant_enabled'] = true;
+$config['ai_assistant_default_provider'] = 'ollama';
+
+$config['ai_assistant_providers'] = array(
+    'ollama' => array(
+        'enabled' => true,
+        'endpoint' => 'http://localhost:11434',
+        'model' => 'llama3.1',
+        'timeout' => 22,
+        'max_tokens' => 1200,
+        'temperature' => 0.2,
+    ),
+    'openai' => array(
+        'enabled' => false,
+        'endpoint' => 'https://api.openai.com/v1',
+        'api_key' => '',
+        'model' => 'gpt-4o-mini',
+        'timeout' => 22,
+        'max_tokens' => 1200,
+        'temperature' => 0.2,
+    ),
+    'openai_compatible' => array(
+        'enabled' => false,
+        'endpoint' => 'https://example.com/v1',
+        'api_key' => '',
+        'model' => 'model-name',
+        'timeout' => 22,
+        'max_tokens' => 1200,
+        'temperature' => 0.2,
+    ),
+    'anthropic' => array(
+        'enabled' => false,
+        'endpoint' => 'https://api.anthropic.com/v1/messages',
+        'api_key' => '',
+        'model' => 'claude-3-5-haiku-latest',
+        'timeout' => 22,
+        'max_tokens' => 1200,
+        'temperature' => 0.2,
+    ),
+    'gemini' => array(
+        'enabled' => false,
+        'endpoint' => 'https://generativelanguage.googleapis.com/v1beta',
+        'api_key' => '',
+        'model' => 'gemini-1.5-flash',
+        'timeout' => 22,
+        'max_tokens' => 1200,
+        'temperature' => 0.2,
+    ),
+);
+
+$config['ai_assistant_allow_cloud_email_body'] = false;
+$config['ai_assistant_allow_cloud_attachments'] = false;
+$config['ai_assistant_allow_external_reputation_checks'] = false;
+
+$config['ai_assistant_enable_threat_detection'] = true;
+$config['ai_assistant_enable_summarization'] = true;
+$config['ai_assistant_enable_compose_tools'] = true;
+$config['ai_assistant_enable_followup_tracker'] = true;
+$config['ai_assistant_enable_dashboard'] = true;
+
+$config['ai_assistant_followup_days'] = 5;
+$config['ai_assistant_async_timeout'] = 180;
+$config['ai_assistant_log_level'] = 'warning';
+$config['ai_assistant_cache_minutes'] = 60;
+$config['ai_assistant_max_email_chars'] = 16000;

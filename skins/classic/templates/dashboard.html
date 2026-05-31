@@ -1,0 +1,23 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<roundcube:include file="/includes/links.html" />
+</head>
+<body>
+
+<roundcube:include file="/includes/header.html" />
+
+<div id="mainscreen">
+  <div id="ai-assistant-dashboard" class="box ai-assistant-dashboard">
+    <h1><roundcube:label name="ai_roundcube_assistant.aiassistant" /></h1>
+    <p>Use message toolbar actions to build summaries, threat scans, actions, and priority insights.</p>
+    <p><button type="button" id="ai-assistant-load-followups" class="button mainaction">Load follow-ups</button></p>
+    <h2>Follow-up candidates</h2>
+    <div id="ai-assistant-followups"></div>
+  </div>
+</div>
+
+<roundcube:include file="/includes/footer.html" />
+
+</body>
+</html>
